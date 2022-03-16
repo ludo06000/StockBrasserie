@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(211, 211, 211);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 90px;
+}
+
+.logoTitle{
+    display: flex;
+    justify-content: left;
+    margin-left: 15px;
+}
+
+.titleNav{
+    color: whitesmoke;
+    font-size: 60px;
+    padding-left: 40px;
+}
+
+a{
+    color: whitesmoke;
+    padding: 5px;
+    font-size: 26px;
+    margin-right: 30px;
+}
+a:hover{
+    color: aqua;
+
+}
+
+button:hover{
+    border: 2px solid aqua;
+    color: rgb(1, 220, 220);
+    font-weight: 600;
+
+}
+
+input{
+    margin-bottom: 25px;
+}
+
+#formContain {
+    padding-left: 45px;
+    margin-bottom: 45px;
+}
+
+.tableauItem{
+    padding-left: 10px;
+}
+
+
+.choixForm{
+    text-align: center;
+    margin: 30px 0px;
+
+}
+#choixBoisson{
+    padding: 5px;
+    border-radius: 10px;
+}
+#choixBoisson:hover{
+    border: 2px solid aqua;
+}
+
+#allItemForm input{
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+#allItemForm input:hover{
+    border: 2px solid aqua;
+}
+
+.visueDegres{
+        position: relative;
+        left: 34%;
+    }
+
+
+.validButton{
+    padding: 5px 20px;
+    position: relative;
+    left: 47%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 10PX;
+}
+
+th{
+    width: 10%;
+    text-decoration: underline;
+}
+
+td{
+    width: 14.25%;
+    text-align: center;
+}
+
+.cardsElement{
+    display: flex;
+    justify-content:space-around;
+}

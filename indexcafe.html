@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Son's of Drink</title>
+  </head>
+  <body>
+    <header>
+      <div class="logoTitle">
+        <img src="img/beer.png" alt="beer Logo" />
+        <h1 class="titleNav">Son's Of Beer !</h1>
+      </div>
+      <nav class="topBar">
+        <a href="#" class="caisse">Caisse</a>
+        <a href="#" class="gestionStock">Stock</a>
+        <a href="#" class="tuto">Tutoriel</a>
+        <a href="cards.html" class="contact">Contact</a>
+      </nav>
+    </header>
+    <form id="formContain">
+      <div class="choixForm">
+        <select name="choixBoisson" id="choixBoisson">
+          <option class="bAChoice" value="bAChoice">Boisson Alcoolisée</option>
+          <option class="bNaChoice" value="bNaChoice">
+            Boisson Non Alcoolisée
+          </option>
+          <option class="otherChoice" value="otherChoice">Autres</option>
+        </select>
+      </div>
+      <div id="allItemForm">
+        <label for="nameDrink">Marque de la Boisson : </label>
+        <input class="nameDrink" type="text" name="nameDrink" />
+        <label for="qTeDrink">Quantité :</label>
+        <input
+          class="qTeDrink"
+          name="qTeDrink"
+          type="number"
+          min="0"
+          placeholder="Veuillez saisir la quantitée à entrer dans le stock"
+        />
+        <label for="pahtDrink">Prix Achat H-T :</label>
+        <input
+          class="pahtDrink"
+          name="pahtDrink"
+          type="number"
+          step="0.01"
+          min="0"
+          placeholder="Veuillez saisir le prix d'achat H-T"
+        />
+        <label for="pvhtDrink">Prix Vente HT :</label>
+        <input
+          class="pvhtDrink"
+          name="pvhtDrink"
+          type="number"
+          step="0.01"
+          min="0"
+          placeholder="Veuillez saisir le prix de vente H-T"
+        />
+        <div class="visueDegres">
+          <label class="degrees" for="degresDrink">Degrés d'alcool de la boisson</label>
+          <input
+            name="degresDrink"
+            type="number"
+            step="0.01"
+            min="0"
+            placeholder="Veuillez saisir les degrés de la boisson"
+            class="degresDrink"
+          />
+        </div>
+
+      </div>
+      <button class="validButton" type="submit">Valider</button>
+    </form>
+    <div class="tableauItem">
+      <table>
+        <thead>
+          <tr>
+            <th>Marque</th>
+            <th>Degrés</th>
+            <th>Prix Achat hors Taxe</th>
+            <th>Prix de vente Hors Taxe</th>
+            <th>Prix de vente T.T.C</th>
+            <th>Marge en %</th>
+            <th>Quantité</th>
+            <th>Select</th>
+          </tr>
+        </thead>
+        <tbody class="boissonListItem">
+        </tbody>
+      </table>
+    </div>
+    <script src="scriptcafe.js"></script>
+  </body>
+</html>
